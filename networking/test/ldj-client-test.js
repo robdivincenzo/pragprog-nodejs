@@ -28,4 +28,10 @@ describe('LDJClient', () => {
         stream.emit('data', '{"foo":');
         process.nextTick(() => stream.emit('data', '"bar"}\n'));
     });
+
+    // Example of setting timeout
+    it('should finish within 5 seconds', done => {
+        setTimeout(done, 4500); // Call done after 4.5 seconds
+    }).timeout(5000); // verify done called within 5 seconds
+
 });
