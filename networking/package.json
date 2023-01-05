@@ -1,0 +1,19 @@
+{
+  "name": "networking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "net-watcher-json-client.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.2.0"
+  }
+}
