@@ -13,6 +13,8 @@ requester.on('message', data => {
 
 requester.connect('tcp://localhost:60401');
 
-// Send a request for content.
+// Send a request for content
+for (let i = 1; i < 500; i++) {
 console.log(`Sending a request for ${filename}`);
 requester.send(JSON.stringify({ path: filename }));
+}
